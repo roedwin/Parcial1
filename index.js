@@ -1,8 +1,10 @@
-var horasPagadas = {
+var horasPagadas = require('./horasPagadas');
+
+/*var horasPagadas = {
     pagoMes: (precioHora,horasTrabajas) => ((precioHora*horasTrabajas)*20),
     pagos: (precioHora, personas,horasTrabajas) => ((precioHora*horasTrabajas)*personas),
     holgura: (precioHora, horasTrabajas) => ((precioHora*horasTrabajas)/0.08)
-};
+};*/
 function costoTotal(precioHora,personas,horasTrabajas, materiales) {
     console.log("Costo total de gastos en el proyecto");
     if (precioHora <= 0 || personas <= 0) {
